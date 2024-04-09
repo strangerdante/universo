@@ -945,8 +945,16 @@ video {
   height: 40px;
 }
 
+.h-\[82vh\]{
+  height: 82vh;
+}
+
 .h-screen{
   height: 100vh;
+}
+
+.h-\[210px\]{
+  height: 210px;
 }
 
 .w-1{
@@ -995,10 +1003,6 @@ video {
 
 .w-\[weird-and-invalid\]{
   width: weird-and-invalid;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .flex-1{
@@ -1539,6 +1543,14 @@ video {
   gap: 1rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
+.gap-12{
+  gap: 3rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2028,11 +2040,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20{
@@ -2865,6 +2872,19 @@ video {
     order: 9999;
   }
 
+  .sm\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .sm\:-mt-6{
+    margin-top: -1.5rem;
+  }
+
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .sm\:ml-10{
     margin-left: 2.5rem;
   }
@@ -2879,30 +2899,6 @@ video {
 
   .sm\:mt-8{
     margin-top: 2rem;
-  }
-
-  .sm\:mb-0{
-    margin-bottom: 0px;
-  }
-
-  .sm\:-mt-10{
-    margin-top: -2.5rem;
-  }
-
-  .sm\:-mt-2{
-    margin-top: -0.5rem;
-  }
-
-  .sm\:-mt-4{
-    margin-top: -1rem;
-  }
-
-  .sm\:-mt-5{
-    margin-top: -1.25rem;
-  }
-
-  .sm\:-mt-6{
-    margin-top: -1.5rem;
   }
 
   .sm\:block{
@@ -2937,12 +2933,12 @@ video {
     height: 60px;
   }
 
-  .sm\:h-\[96px\]{
-    height: 96px;
-  }
-
   .sm\:h-\[84px\]{
     height: 84px;
+  }
+
+  .sm\:h-\[96px\]{
+    height: 96px;
   }
 
   .sm\:w-3\/5{
@@ -2969,12 +2965,12 @@ video {
     width: 450px;
   }
 
-  .sm\:w-\[60px\]{
-    width: 60px;
-  }
-
   .sm\:w-\[592px\]{
     width: 592px;
+  }
+
+  .sm\:w-\[60px\]{
+    width: 60px;
   }
 
   .sm\:flex-1{
@@ -2995,10 +2991,6 @@ video {
 
   .sm\:gap-4{
     gap: 1rem;
-  }
-
-  .sm\:self-end{
-    align-self: flex-end;
   }
 
   .sm\:border-b-4{
@@ -3181,10 +3173,6 @@ video {
 
   .md\:w-\[568px\]{
     width: 568px;
-  }
-
-  .md\:w-\[614px\]{
-    width: 614px;
   }
 
   .md\:w-\[80px\]{
