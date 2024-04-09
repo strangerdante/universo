@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+      .pulso:hover {
+        animation: animate 2s linear infinite;
+        cursor: pointer;
+      }
+      @keyframes animate {
+        0% {
+          box-shadow: 0 0 0 0 rgb(255, 255, 255);
+        }
+        40% {
+          box-shadow: 0 0 0 50px rgb(0, 206, 209, 0);
+        }
+        80% {
+          box-shadow: 0 0 0 50px rgb(0, 206, 209, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgb(255, 255, 255);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="flex h-screen flex-col bg-fondocel bg-cover sm:bg-fondotablet md:bg-fondopc"
+  >
+    <header class="mt-5 flex items-center justify-between sm:mt-0 md:mt-6">
+      <!-- Favicon -->
+      <div class="ml-2 flex w-1/5 px-2 sm:ml-10 sm:mt-8 sm:flex-1 md:mt-6">
+        <a href="index.html"
+          ><img
+            src=".\assets\shared\logo.svg"
+            alt=""
+            class="flex-1 rounded-full"
+        /></a>
+        <!-- linea -->
+        <div class="mt-6 hidden h-[1px] flex-1 bg-gray-500 sm:block"></div>
+      </div>
+      <!-- abrir menu -->
+      <div class="mr-5 sm:hidden">
+        <button
+          onclick="(() => { document.querySelector('#menu').classList.toggle('hidden') })();"
+        >
+          <img src=".\assets\shared\icon-hamburger.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- Navegacion -->
+      <nav
+        id="menu"
+        class="fixed right-0 top-0 flex hidden h-screen flex-col flex-nowrap bg-gray-400 bg-opacity-20 p-8 font-barlow text-[16px] uppercase text-white backdrop-blur-md sm:top-5 sm:block sm:h-[96px] sm:w-3/5 sm:flex-row sm:text-[14px] md:w-3/5 md:pl-32 md:text-[16px]"
+      >
+        <!-- cerrar   -->
+        <div class="mt-2 self-end sm:hidden">
+          <button
+            onclick="(() => { document.querySelector('#menu').classList.toggle('hidden') })();"
+          >
+            <img src=".\assets\shared\icon-close.svg" alt="" />
+          </button>
+        </div>
+
+        <a
+          href="index.html"
+          class="px-4 pb-[38px] sm:border-b-4 sm:border-white sm:px-2"
+          ><span class="hidden font-semibold md:inline">00</span> Home</a
+        >
+        <a
+          href="destination-moon.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">01</span> Destination</a
+        >
+        <a
+          href="crew-commander.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">02</span> Crew</a
+        >
+        <a
+          href="technology-vehicle.html"
+          class="px-4 pb-[38px] sm:px-0 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">03</span> Technology</a
+        >
+      </nav>
+    </header>
+
+    <div class="flex h-screen flex-col items-center justify-around md:flex-row">
+      <!-- info inicio -->
+      <div
+        class="h-[276px] w-[327px] text-center text-white sm:h-[382px] sm:w-[450px] md:text-left"
+      >
+        <h1
+          class="font-barlow text-[16px] uppercase tracking-tighter sm:text-[20px] md:text-[28px]"
+        >
+          So, you want to travel to
+        </h1>
+        <h1 class="font-bell text-[80px] uppercase sm:text-[150px]">Space</h1>
+
+        <p class="font-barlow text-[16px] sm:text-[16px] md:text-lg">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <!-- circulo -->
+      <div>
+        <a
+          class="pulso flex h-[150px] w-[150px] items-center justify-center rounded-full bg-white font-bell text-[20px] uppercase sm:h-[242px] sm:w-[242px] sm:text-[32px] md:ml-32 md:mt-40 md:h-[274px] md:w-[274px] md:text-5xl"
+          href="destination-moon.html"
+          >Explore</a
+        >
+      </div>
+    </div>
+
+    <script>
+      // let menu = document.querySelector("#menu");
+      // menu.classList.toggle("hidden");
+
+      // const links = document.querySelectorAll("nav a");
+
+      // links.forEach((link) => {
+      //   link.addEventListener("mouseover", function () {
+      //     // Remover la clase 'border-b-4' de todos los enlaces
+      //     links.forEach((link) => {
+      //       link.classList.remove("border-b-4");
+      //     });
+
+      //     // Agregar la clase 'border-b-4' al enlace seleccionado
+      //     this.classList.add("border-b-4");
+      //   });
+      // });
+      // console.log(links);
+    </script>
+  </body>
+</html>

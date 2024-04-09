@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="flex h-screen flex-col bg-destinocel bg-cover sm:bg-destinotablet md:bg-destinopc"
+  >
+    <header class="mt-5 flex items-center justify-between sm:mt-0 md:mt-6">
+      <!-- Favicon -->
+      <div class="ml-2 flex w-1/5 px-2 sm:ml-10 sm:mt-8 sm:flex-1 md:mt-6">
+        <a href="index.html"
+          ><img
+            src=".\assets\shared\logo.svg"
+            alt=""
+            class="flex-1 rounded-full"
+        /></a>
+        <!-- linea -->
+        <div class="mt-6 hidden h-[1px] flex-1 bg-gray-500 sm:block"></div>
+      </div>
+      <!-- abrir menu -->
+      <div class="mr-5 sm:hidden">
+        <button
+          onclick="(() => { document.querySelector('#menu').classList.toggle('hidden') })();"
+        >
+          <img src=".\assets\shared\icon-hamburger.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- Navegacion -->
+      <nav
+        id="menu"
+        class="fixed right-0 top-0 flex hidden h-screen flex-col flex-nowrap bg-gray-400 bg-opacity-20 p-8 font-barlow text-[16px] uppercase text-white backdrop-blur-md sm:top-5 sm:block sm:h-[96px] sm:w-3/5 sm:flex-row sm:text-[14px] md:w-3/5 md:pl-32 md:text-[16px]"
+      >
+        <!-- cerrar   -->
+        <div class="mt-2 self-end sm:hidden">
+          <button
+            onclick="(() => { document.querySelector('#menu').classList.toggle('hidden') })();"
+          >
+            <img src=".\assets\shared\icon-close.svg" alt="" />
+          </button>
+        </div>
+
+        <a
+          href="index.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">00</span> Home</a
+        >
+        <a
+          href="destination-moon.html"
+          class="px-4 pb-[38px] sm:border-b-4 sm:border-white sm:px-2"
+          ><span class="hidden font-semibold md:inline">01</span> Destination</a
+        >
+        <a
+          href="crew-commander.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">02</span> Crew</a
+        >
+        <a
+          href="technology-vehicle.html"
+          class="px-4 pb-[38px] sm:px-0 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">03</span> Technology</a
+        >
+      </nav>
+    </header>
+    <div class="container mx-auto mt-10 w-10/12">
+      <h1
+        class="mb-8 text-center font-barlow text-[16px] uppercase text-white sm:text-left sm:text-[20px] md:text-[28px]"
+      >
+        <span class="font-semibold text-gray-500">01</span> Pick your
+        destination
+      </h1>
+    </div>
+    <div class="flex h-screen flex-col items-center justify-around md:flex-row">
+      <!-- Imagen planeta -->
+      <div
+        class="mb-8 h-[170px] w-[170px] sm:h-[300px] sm:w-[300px] md:h-[445px] md:w-[445px]"
+      >
+        <img src="./assets/destination/image-mars.webp" alt="marte" />
+      </div>
+      <!-- Info -->
+      <div class="md:h-[472px] md:w-[445px]">
+        <nav
+          class="-mt-5 mb-3 text-center font-barlow text-[16px] text-lila sm:mt-0 md:text-left"
+        >
+          <a
+            class="ml-0 p-2 hover:border-b-2 hover:border-gray-600"
+            href="destination-moon.html"
+            >Moon</a
+          >
+          <a class="border-b-2 border-white p-2" href="destination-mars.html"
+            >Mars</a
+          >
+          <a
+            class="p-2 hover:border-b-2 hover:border-gray-600"
+            href="destination-europa.html"
+            >Europa
+          </a>
+          <a
+            class="p-2 hover:border-b-2 hover:border-gray-600"
+            href="destination-titan.html"
+            >Titan</a
+          >
+        </nav>
+        <h1
+          class="text-center font-bell text-[56px] uppercase text-white sm:text-[80px] md:text-left md:text-[100px]"
+        >
+          Mars
+        </h1>
+        <p
+          class="mb-10 p-4 text-center font-barlow text-[15px] text-lila md:text-left md:text-[18px]"
+        >
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
+        <hr class="border-gray-700" />
+        <div
+          class="mt-5 flex flex-col justify-center text-center sm:flex-row md:justify-start md:text-left"
+        >
+          <p class="flex flex-col font-barlow text-sm uppercase text-lila">
+            Avg. distance
+            <span class="mt-3 font-bell text-[28px] text-white"
+              >225 mil. km</span
+            >
+          </p>
+          <p
+            class="mt-10 flex flex-col font-barlow text-sm uppercase text-lila sm:ml-14 sm:mt-0"
+          >
+            Est. travel time
+            <span class="mt-3 font-bell text-[28px] text-white">9 months</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

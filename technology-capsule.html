@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body
+    class="sm:tecnologiapctablet md:tecnologiapcpc flex h-screen flex-col bg-tecnologiacel bg-cover"
+  >
+    <header class="mt-5 flex items-center justify-between sm:mt-0 md:mt-6">
+      <!-- Favicon -->
+      <div class="ml-2 flex w-1/5 px-2 sm:ml-10 sm:mt-8 sm:flex-1 md:mt-6">
+        <a href="index.html"
+          ><img
+            src=".\assets\shared\logo.svg"
+            alt=""
+            class="flex-1 rounded-full"
+        /></a>
+        <!-- linea -->
+        <div class="mt-6 hidden h-[1px] flex-1 bg-gray-500 sm:block"></div>
+      </div>
+      <!-- abrir menu -->
+      <div class="mr-5 sm:hidden">
+        <button
+          onclick="(() => { document.querySelector('#menu').classList.toggle('hidden') })();"
+        >
+          <img src=".\assets\shared\icon-hamburger.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- Navegacion -->
+      <nav
+        id="menu"
+        class="fixed right-0 top-0 flex hidden h-screen flex-col flex-nowrap bg-gray-400 bg-opacity-20 p-8 font-barlow text-[16px] uppercase text-white backdrop-blur-md sm:top-5 sm:block sm:h-[96px] sm:w-3/5 sm:flex-row sm:text-[14px] md:w-3/5 md:pl-32 md:text-[16px]"
+      >
+        <!-- cerrar   -->
+        <div class="mt-2 self-end sm:hidden">
+          <button
+            onclick="(() => { document.querySelector('#menu').classList.toggle('hidden') })();"
+          >
+            <img src=".\assets\shared\icon-close.svg" alt="" />
+          </button>
+        </div>
+
+        <a
+          href="index.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">00</span> Home</a
+        >
+        <a
+          href="destination-moon.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">01</span> Destination</a
+        >
+        <a
+          href="crew-commander.html"
+          class="px-4 pb-[38px] sm:px-2 sm:hover:border-b-4 sm:hover:border-gray-600"
+          ><span class="hidden font-semibold md:inline">02</span> Crew</a
+        >
+        <a
+          href="technology-vehicle.html"
+          class="px-4 pb-[38px] sm:border-b-4 sm:border-white sm:px-0"
+          ><span class="hidden font-semibold md:inline">03</span> Technology</a
+        >
+      </nav>
+    </header>
+    <div class="container mx-auto mt-10 w-10/12">
+      <h1
+        class="text-center font-barlow text-[16px] uppercase text-white sm:text-left sm:text-[20px] md:text-[28px]"
+      >
+        <span class="font-semibold text-gray-500">03</span> Space Lauch 101
+      </h1>
+    </div>
+    <div
+      class="flex h-screen flex-col items-center justify-center gap-10 sm:justify-between sm:gap-0 md:flex-row"
+    >
+      <!-- botones redondos -->
+      <div
+        class="flex flex-row text-center font-bell text-[16px] sm:text-[24px] md:ml-20 md:flex-col md:text-[32px]"
+      >
+        <a
+          class="m-4 h-[40px] w-[40px] rounded-full border border-gray-500 bg-transparent leading-[40px] text-white sm:h-[60px] sm:w-[60px] sm:leading-[70px] md:h-[80px] md:w-[80px] md:leading-[80px]"
+          href="technology-vehicle.html"
+          >1</a
+        >
+        <a
+          class="m-4 h-[40px] w-[40px] rounded-full bg-white leading-[40px] sm:h-[60px] sm:w-[60px] sm:leading-[70px] md:h-[80px] md:w-[80px] md:leading-[80px]"
+          href="technology-capsule.html"
+          >2</a
+        >
+        <a
+          class="m-4 h-[40px] w-[40px] rounded-full border border-gray-500 bg-transparent leading-[40px] text-white sm:h-[60px] sm:w-[60px] sm:leading-[70px] md:h-[80px] md:w-[80px] md:leading-[80px]"
+          href="technology-spaceport.html"
+          >3</a
+        >
+      </div>
+      <!-- informacion -->
+      <div
+        class="h-[220px] w-[327px] text-center sm:h-[458px] sm:w-[237px] md:-ml-28 md:h-[303px] md:w-[444px] md:text-left"
+      >
+        <h1 class="font-barlow text-[14px] uppercase text-lila sm:text-[16px]">
+          The terminology...
+        </h1>
+        <h1
+          class="font-bell text-[24px] uppercase text-white sm:text-[40px] md:text-[56px]"
+        >
+          Space capsule
+        </h1>
+        <p
+          class="font-barlow text-[15px] text-lila sm:text-[16px] md:text-[18px]"
+        >
+          A space capsule is an often-crewed spacecraft that uses a blunt-body
+          reentry capsule to reenter the Earth's atmosphere without wings. Our
+          capsule is where you'll spend your time during the flight. It includes
+          a space gym, cinema, and plenty of other activities to keep you
+          entertained.
+        </p>
+      </div>
+
+      <!-- imagen -->
+      <div class="order-first md:order-last">
+        <img
+          class="hidden md:block"
+          src="./assets/technology/image-space-capsule-portrait.jpg"
+          alt=""
+        />
+        <img
+          class="md:hidden"
+          src="./assets/technology/image-space-capsule-landscape.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
